@@ -73,8 +73,12 @@
     }
   </style>
   <script>
-    function goToApp() {
+    function goToServer1() {
       window.location.href = "https://www.appsheet.com/start/120b704e-0ac7-454c-8567-1685b93bafbe";
+    }
+
+    function goToServer2() {
+      window.location.href = "https://tracuu.taxinamthang.vn"; // Thay link Appsheet thứ 2 vào đây
     }
   </script>
 </head>
@@ -87,10 +91,15 @@
   <h2>Tra cứu hợp đồng - An Giang</h2>
 
   <!-- Thông báo -->
-  <div class="message">Hãy bấm vào nút "Truy cập Ứng dụng" bên dưới để tiếp tục.<br>HÃY CHUNG TAY ĐÓNG GÓP VỊ TRÍ VÁ VỎ, SỬA CHỮA XE ĐỂ HỖ TRỢ CÁC TÀI XẾ</br></div>
-
-  <!-- Nút truy cập -->
-  <button class="button" onclick="goToApp()">Truy cập Ứng dụng</button>
+  <div class="message">
+    Hãy chọn máy chủ bên dưới để truy cập ứng dụng.<br>
+  </div>
+  
+  <!-- Hai nút truy cập -->
+  <div class="button-container">
+    <button class="button" onclick="goToServer1()">Máy chủ cũ</button>
+    <button class="button" onclick="goToServer2()">Máy chủ mới (Beta)</button>
+  </div>
 
 </body>
 </html>
